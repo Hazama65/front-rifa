@@ -3,11 +3,11 @@ import { PublicRoutes } from './PublicRoutes'
 import { AuthRouter } from './AuthRouter'
 import { useEffect, useState } from 'react';
 import { PrivateRoutes } from './PrivateRoutes';
-import { HomePage } from '../Ruleta';
 import { useAuth } from '../hooks/useAuth';
 import { useSelector } from 'react-redux';
 import { UserStateProps } from '../interfaces/interfaces';
 import LoadingCircle from '../Ruleta/components/ui/Loading';
+import { RuletaRouter } from './RuletaRouter';
 
 
 
@@ -48,12 +48,13 @@ export const AppRouter = () => {
                     }
                 />
             
+    
                 <Route 
                 
                     path="/*"
                     element={
                         <PrivateRoutes isAuth={isLoggedIn}>
-                            <HomePage />
+                            <RuletaRouter />
                         </PrivateRoutes>
                     }
                 />  

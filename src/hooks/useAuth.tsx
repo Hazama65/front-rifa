@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import ruletaApi from "../api/ruletaApi"
 import { clearErrorMessage, onChecking, onLogin, onLogout } from "../store/user/userSlice";
 import { toast } from 'react-toastify';
+import { onSetNumbers } from "../store/user/registerNumbersSlice";
 interface LoginProps {
     email: string;
     password: string;
@@ -65,8 +66,23 @@ export const useAuth = () => {
 
         }
     }
+
+    const startGetNumbers = async () => {
+
+        try{
+            
+            const {data} = await ruletaApi.get('/users/numbers');
+            // console.log(data)
+            dispatch(onSetNumbers([...data]))
+            
+        }catch(error){
+
+            console.log(error);
+
+        }
+    }
     
 
-    return {startLogin, checkAuth, startRegister}
+    return {startLogin, checkAuth, startRegister, startGetNumbers}
 }
 
