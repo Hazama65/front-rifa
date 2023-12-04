@@ -1,0 +1,154 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-span-error-class {
+  display: block;
+  margin: 1px 0; /* Puedes ajustar el valor del margen según tus preferencias */
+  padding: 3px;
+  color: #e60f25; /* Puedes cambiar el color del texto según tu diseño */
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.login-form {
+  background-color: #222;
+  padding: 20px; /* Ajuste el espacio interno del formulario */
+  border-radius: 10px;
+  width: 80%; /* Ajusta el ancho del formulario */
+  max-width: 400px; /* Establece un ancho máximo */
+  text-align: center; /* Centra el contenido del formulario */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.logo {
+  margin-bottom: 20px; /* Espacio para el logo o la imagen arriba del formulario */
+}
+
+label {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+input {
+  width: calc(100% - 20px); /* Ajusta el ancho y cuenta para el padding */
+  padding: 10px; /* Ajusta el espacio interno de los campos de entrada */
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  background-color: #a0a0a0;
+  outline: none;
+}
+
+
+img{
+  width: 30%;
+}
+
+button {
+  width: calc(100% - 20px); /* Ajusta el ancho y cuenta para el padding */
+  padding: 12px; /* Ajusta el espacio interno del botón */
+  background-color: rgb(255, 104, 4);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.mt-1 {
+  margin-top: 2px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.mt-3 {
+  margin-top: 6px;
+}
+
+button:hover {
+  background-color: rgb(253, 144, 55);
+}
+
+.text-white{
+  color: white;
+}
+
+.text-lightgray{
+  color: rgb(221, 221, 221);
+}
+
+.text-size-1{
+  font-size: 0.7rem;
+}
+
+/* Media Query para hacer ajustes específicos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .login-form {
+    width: 90%;
+    padding: 15px;
+  }
+  
+  input,
+  button {
+    width: calc(100% - 30px);
+  }
+}
+
+
+
+
+
+
+.registro-exitoso-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.registro-exitoso-content {
+  text-align: center;
+}
+
+.registro-exitoso-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.registro-exitoso-text {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.registro-exitoso-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+/* Media Query para hacer ajustes específicos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .registro-exitoso-content {
+    width: 90%;
+    padding: 15px;
+  }
+}
