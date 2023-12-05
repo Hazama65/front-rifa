@@ -2,10 +2,9 @@ import axios from 'axios';
 
 
 const ruletaApi = axios.create({
-    baseURL: 'https://back-rifa-production.up.railway.app/api/v1/ruleta',
-    // baseURL: 'http://localhost:3000/api/v1/ruleta'
+    // baseURL: 'https://back-rifa-production.up.railway.app/api/v1/ruleta',
+    baseURL: 'http://localhost:3000/api/v1/ruleta'
 });
-
 
 
 ruletaApi.interceptors.request.use( config => {
