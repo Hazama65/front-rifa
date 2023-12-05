@@ -38,6 +38,8 @@ export const FormLogin = () => {
               <img src={logo} alt="Logo" />
             </div>
             <h2 className='text-white'>Ingresar</h2>
+            <p className='text-lightgray text-size-1'>Ingresa al sistema para obtener tu número de rifa</p>
+
             <MyInputAbstract 
               label="Email:"
               id="email"
