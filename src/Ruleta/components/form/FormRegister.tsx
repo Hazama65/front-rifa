@@ -58,7 +58,7 @@ export const FormRegister = () => {
                 <p className='text-lightgray'>Ingresa los siguientes datos para registrarte y obtener un número de rifa</p>
                 
                 <MyInputAbstract 
-                    label='Correo empresarial:'
+                    label='Correo:'
                     type='email'
                     id='email'
                     name='email'
